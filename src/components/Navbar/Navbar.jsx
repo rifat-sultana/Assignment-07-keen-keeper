@@ -27,15 +27,13 @@ const Navbar = () => {
 
           <Link
             to="/timeline"
-            className="flex items-center gap-1 text-gray-600 hover:text-black text-sm"
-          >
+            className="flex items-center gap-1 text-gray-600 hover:text-black text-sm">
             <img src={Clock} alt="Clock"/>Timeline
           </Link>
 
           <Link
             to="/stats"
-            className="flex items-center gap-1 text-gray-600 hover:text-black text-sm"
-          >
+            className="flex items-center gap-1 text-gray-600 hover:text-black text-sm" >
             <img src={Stats} alt="Stats"  /> Stats
           </Link>
 

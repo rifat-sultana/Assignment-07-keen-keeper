@@ -2,7 +2,8 @@ import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../Layout/MainLayout";
 import Friends from "../Pages/friends";
 import Timeline from "../Pages/Timeline";
-import Stats from "../Pages/Stats";;
+import Stats from "../Pages/Stats";
+import Home from "../Pages/Home";
 
 
 
@@ -12,7 +13,7 @@ import Stats from "../Pages/Stats";;
     path: "/",
     element: <MainLayout />,
     children: [
-      { path: "/", element: <h2>Home</h2> },
+      { path: "/", element: <Home/> },
       { path: "friends", element: <Friends /> },
       { path: "timeline", element: <Timeline /> },
       { path: "stats", element: <Stats /> },

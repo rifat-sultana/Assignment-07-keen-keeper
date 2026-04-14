@@ -1,11 +1,13 @@
-import React from 'react';
+import HeroSection from "../components/Hero/Hero"
 
-const friends = () => {
+const Friends = () => {
   return (
     <div>
-        <h2> friends page </h2>
+        
+       
+
     </div>
   );
 };
 
-export default friends;
+export default Friends;

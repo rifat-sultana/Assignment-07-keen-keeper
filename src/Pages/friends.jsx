@@ -1,4 +1,5 @@
 import {use} from 'react';
+import { Link } from "react-router-dom";
 
 
 const friendsPromise = fetch("/friendsList.json").then(res => res.json())
@@ -12,11 +13,13 @@ const FriendsPage = () => {
     <div className="max-w-5xl mx-auto mt-10">
 
       <h2 className="text-3xl text-center font-bold mb-6">
-        Friends Network
+        Friends Section
       </h2>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {Friends.map(friend => (
+
+          <Link to={`/friend/${friend.id}`} key={friend.id}> 
           <div
             key={friend.id}
             className="bg-white p-4 rounded-xl shadow text-center">
@@ -53,6 +56,7 @@ const FriendsPage = () => {
                  {friend.status}
             </span>
           </div>
+          </Link>
         ))}
       </div>
     </div>

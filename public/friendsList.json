@@ -8,7 +8,7 @@
     "status": "On-track",
     "tags": ["College", "Close friend"],
     "bio": "Met in university. Loves traveling and photography.",
-    "goal": 14,
+    "goal": 30,
     "next_due_date": "2025-04-25"
   },
   {
@@ -20,7 +20,7 @@
     "status": "Almost due",
     "tags": ["Work", "Gym"],
     "bio": "Gym partner and colleague. Very motivating person.",
-    "goal": 14,
+    "goal": 30,
     "next_due_date": "2025-04-18"
   },
   {
@@ -44,7 +44,7 @@
     "status": "On-track",
     "tags": ["Travel", "Friend"],
     "bio": "Travel buddy. Explored multiple countries together.",
-    "goal": 14,
+    "goal": 20,
     "next_due_date": "2025-04-28"
   },
   {
@@ -56,7 +56,7 @@
     "status": "Almost due",
     "tags": ["Work"],
     "bio": "Mentor at workplace. Guides in career growth.",
-    "goal": 14,
+    "goal": 30,
     "next_due_date": "2025-04-16"
   },
   {
@@ -68,7 +68,7 @@
     "status": "Overdue",
     "tags": ["Neighbor"],
     "bio": "Friendly neighbor. Often meet during evening walks.",
-    "goal": 14,
+    "goal": 25,
     "next_due_date": "2025-04-08"
   },
   {
@@ -80,7 +80,7 @@
     "status": "On-track",
     "tags": ["Family"],
     "bio": "Cousin sister. Very close since childhood.",
-    "goal": 14,
+    "goal": 25,
     "next_due_date": "2025-04-30"
   },
   {
@@ -104,7 +104,7 @@
     "status": "On-track",
     "tags": ["Work"],
     "bio": "Colleague and project partner.",
-    "goal": 14,
+    "goal": 30,
     "next_due_date": "2025-04-26"
   },
   {
@@ -128,7 +128,7 @@
     "status": "Overdue",
     "tags": ["Travel"],
     "bio": "Travel companion from last year trip.",
-    "goal": 14,
+    "goal": 30,
     "next_due_date": "2025-04-11"
   },
   {
@@ -140,7 +140,7 @@
     "status": "On-track",
     "tags": ["School"],
     "bio": "School friend. Still in touch regularly.",
-    "goal": 14,
+    "goal": 30,
     "next_due_date": "2025-05-01"
   }
 ]

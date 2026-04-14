@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../Layout/MainLayout";
 import Friends from "../Pages/friends";
 import Timeline from "../Pages/Timeline";
-import Stats from "../Pages/Stats";
+import Stats from "../components/Stats/Stats";
 import Home from "../Pages/Home";
 
 

@@ -7,7 +7,7 @@ import Stats from "../../assets/stats.png";
 const Navbar = () => {
 
   return (
-    <div className="bg-white  shadow-md">
+    <div className="bg-white  shadow-lg">
    
       <div className="w-full px-10 py-3 flex justify-between items-center">
     

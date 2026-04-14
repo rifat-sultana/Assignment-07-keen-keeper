@@ -1,7 +1,8 @@
 
 import Stats from "../components/Stats/Stats";
-
 import HeroSection from "../components/Hero/Hero";
+import Friends from "../Pages/friends";
+
 
 const Home = () => {
   return (
@@ -10,6 +11,8 @@ const Home = () => {
 
       <HeroSection />
       <Stats /> 
+      <Friends/>
+   
 
     </div>
   );

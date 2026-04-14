@@ -9,7 +9,7 @@ const ErrorPage = () => {
         <h1 className="text-7xl font-extrabold text-gray-600 animate-bounce ">404</h1>
 
        
-        <h2 className=" bg-gradient-to-br from-gray-100 to-gray-200 text-2xl font-semibold mt-4 text-gray-700">
+        <h2 className=" `bg-gradient-to-br` from-gray-100 to-gray-200 text-2xl font-semibold mt-4 text-gray-700">
           Oops! Page not found
         </h2>
 

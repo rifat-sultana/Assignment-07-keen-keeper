@@ -6,20 +6,36 @@ import TrashImage from "../assets/Trash.png";
 import CallImage from "../assets/PhoneCall.png";
 import TextImage from "../assets/text.png";
 import VideoImage from "../assets/video.png";
+import { useTimeline } from "../context/useTimeline";
+import { toast } from "react-toastify";
 
 
 const friendsPromise = fetch("/friendsList.json").then(res => res.json())
 
 const FriendDetailsPage = () => {
 
-  const {id} = useParams();
+const {id} = useParams();
   console.log(id,"id")
 
 const Friends = use(friendsPromise);
    console.log(Friends, "Friends");
 
-   const connectedFriend = Friends.find((friend) => friend.id == parseInt(id));
+const connectedFriend = Friends.find((friend) => friend.id == parseInt(id));
    console.log (connectedFriend, 'connectedFriend')
+
+
+
+const FriendDetails = ({ friend }) => {
+  const { addEvent } = useTimeline();
+
+const handleAction = (type) => {
+    addEvent(type, friend.name);
+
+    // toastify  use.......
+    toast.success(`${type} added for ${friend.name}`);
+      }
+
+
 
 
   return (
@@ -141,17 +157,23 @@ const Friends = use(friendsPromise);
 
           <div className="grid grid-cols-3 gap-4">
 
-          <button className="shadow-lg bg-gray-200 p-4 rounded-xl flex flex-col items-center justify-center gap-2 hover:bg-gray-100 transition">
+          <button 
+           onClick={() => handleAction("Call")}
+          className="shadow-lg bg-gray-200 p-4 rounded-xl flex flex-col items-center justify-center gap-2 hover:bg-gray-100 transition">
             <img src={CallImage} className="w-6 h-6" />
             <span className="text-sm font-medium">Call</span>
               </button>
 
-            <button className="shadow-lg bg-gray-200 p-4 rounded-xl flex flex-col items-center justify-center gap-2 hover:bg-gray-100 transition"> 
+            <button 
+             onClick={() => handleAction("Text")}
+            className="shadow-lg bg-gray-200 p-4 rounded-xl flex flex-col items-center justify-center gap-2 hover:bg-gray-100 transition"> 
               <img src={TextImage } alt ="TextImage"  className="w-6 h-6"/> 
               <span className="text-sm font-medium">Text</span>
               </button>
 
-            <button className="shadow-lg bg-gray-200 p-4 rounded-xl flex flex-col items-center justify-center gap-2 hover:bg-gray-100 transition"> 
+            <button 
+            onClick={() => handleAction("Video")}
+            className="shadow-lg bg-gray-200 p-4 rounded-xl flex flex-col items-center justify-center gap-2 hover:bg-gray-100 transition"> 
               <img src={VideoImage } alt ="VideoImage" className="w-6 h-6"   /> 
                <span className="text-sm font-medium">Video</span>
                </button>
@@ -161,6 +183,10 @@ const Friends = use(friendsPromise);
       </div>
     </div>
   );
+};
+
+return <FriendDetails friend={connectedFriend} />;
+
 };
 
 export default FriendDetailsPage;

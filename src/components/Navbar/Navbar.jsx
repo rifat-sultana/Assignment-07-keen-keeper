@@ -28,7 +28,7 @@ const Navbar = () => {
              isActive ? "bg-green-800 text-white" : "text-gray-600"
              }` }>
 
-            <img src={Home} alt="Home" />
+            <img src={Home} alt="Home" className="text-gray-200" />
               Home
               </NavLink>
 

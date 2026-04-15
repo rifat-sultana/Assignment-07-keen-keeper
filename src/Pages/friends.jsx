@@ -21,7 +21,6 @@ const FriendsPage = () => {
 
           <Link to={`/friend/${friend.id}`} key={friend.id}> 
           <div
-            key={friend.id}
             className="bg-white p-4 rounded-xl shadow text-center">
             <img
               src={friend.picture}

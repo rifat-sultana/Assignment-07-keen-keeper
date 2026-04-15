@@ -1,7 +1,8 @@
 
-import Stats from "../components/Stats/Stats";
+import StatsData from "../components/StatsData/StatsData";
 import HeroSection from "../components/Hero/Hero";
 import Friends from "../Pages/friends";
+
 
 
 const Home = () => {
@@ -10,10 +11,9 @@ const Home = () => {
     <div className="bg-gray-100 min-h-screen py-10">
 
       <HeroSection />
-      <Stats /> 
+      <StatsData /> 
       <Friends/>
-   
-
+ 
     </div>
   );
 };

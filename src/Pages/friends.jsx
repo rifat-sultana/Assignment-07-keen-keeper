@@ -1,5 +1,7 @@
 import {use} from 'react';
 import { Link } from "react-router-dom";
+import Loading from "../components/Loading/Loading";
+import { useState, useEffect } from "react";
 
 
 const friendsPromise = fetch("/friendsList.json").then(res => res.json())
@@ -8,6 +10,17 @@ const FriendsPage = () => {
 
    const Friends = use(friendsPromise)
    console.log(Friends, "Friends")
+
+    const [loading, setLoading] = useState(true);
+    useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
+
+      if (loading) {
+    return <Loading />;
+  }
 
   return (
    <div className="max-w-6xl mx-auto px-4">

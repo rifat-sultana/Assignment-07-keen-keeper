@@ -8,6 +8,8 @@ import TextImage from "../assets/text.png";
 import VideoImage from "../assets/video.png";
 import { useTimeline } from "../context/useTimeline";
 import { toast } from "react-toastify";
+import Loading from "../components/Loading/Loading";
+import { useState, useEffect } from "react";
 
 
 const friendsPromise = fetch("/friendsList.json").then(res => res.json())
@@ -35,6 +37,19 @@ const handleAction = (type) => {
     toast.success(`${type} added for ${friend.name}`);
       }
 
+
+
+const [loading, setLoading] = useState(true);
+      
+      useEffect(() => {
+        setTimeout(() => {
+          setLoading(false);
+          }, 800);
+      }, []);
+
+if (loading) {
+  return <Loading />;
+}
 
 
 

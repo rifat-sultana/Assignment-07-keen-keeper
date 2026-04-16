@@ -8,10 +8,10 @@ const friendsPromise = fetch("/friendsList.json").then(res => res.json())
 
 const FriendsPage = () => {
 
-   const Friends = use(friendsPromise)
-   console.log(Friends, "Friends")
+  const Friends = use(friendsPromise)
+  console.log(Friends, "Friends")
 
-    const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
     useEffect(() => {
     setTimeout(() => {
       setLoading(false);

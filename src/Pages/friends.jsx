@@ -10,9 +10,9 @@ const FriendsPage = () => {
    console.log(Friends, "Friends")
 
   return (
-    <div className="max-w-5xl mx-auto mt-10">
+   <div className="max-w-6xl mx-auto px-4">
 
-      <h2 className="text-3xl text-center font-bold mb-6">
+      <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-center mb-6">
         Friends Section
       </h2>
 

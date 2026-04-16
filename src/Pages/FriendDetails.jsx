@@ -138,8 +138,7 @@ const handleAction = (type) => {
           </div>
         </div>
 
-        {/* 🔹 Relationship Goal */}
-        <div className="bg-white p-4 rounded-xl shadow">
+        <div className="bg-white p-3 md:p-6 rounded-xl shadow">
           <div className="flex justify-between shadow-2xl">
             <h3 className="font-bold text-2xl">Relationship Goal</h3>
             <button className="text-md border shadow-lg bg-gray-100 px-2 py-1  rounded">
@@ -152,7 +151,7 @@ const handleAction = (type) => {
         </div>
 
         {/* 🔹 Quick Check-in */}
-        <div className="bg-white p-4 rounded-xl shadow">
+        <div className="bg-white p-4 md:p-8 rounded-xl shadow">
           <h3 className="font-bold text-2xl mb-3">Quick Check-In</h3>
 
           <div className="grid grid-cols-3 gap-4">

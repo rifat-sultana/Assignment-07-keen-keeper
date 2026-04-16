@@ -18,7 +18,8 @@ const Timeline = () => {
   return (
     <div  className="max-w-3xl mx-auto mt-10 px-4">
 
-      <h2 className="text-3xl font-bold mb-4"> Timeline </h2>
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-center mb-6"> Timeline 
+          </h2>
 
       <select 
        value={filterType}

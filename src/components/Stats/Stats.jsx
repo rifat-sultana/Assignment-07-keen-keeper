@@ -1,15 +1,16 @@
+
+
 import { useTimeline } from "../../context/useTimeline";
 import { PieChart, Pie, Cell, Tooltip, Legend } from "recharts";
 
 const Stats = () => {
   const { timeline } = useTimeline();
 
-  // 🔥 count logic
+
   const callCount = timeline.filter(item => item.type === "Call").length;
   const textCount = timeline.filter(item => item.type === "Text").length;
   const videoCount = timeline.filter(item => item.type === "Video").length;
 
-  // 🔥 chart data
   const data = [
     { name: "Call", value: callCount },
     { name: "Text", value: textCount },
@@ -22,12 +23,12 @@ const Stats = () => {
     
     <div className="max-w-5xl mx-auto mt-10">
 
-  <h2 className="text-4xl font-bold text-center mb-10">
+  <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-center mb-12">
     Friendship Analytics
   </h2>
 
 
-  <div className="bg-white p-10 rounded-xl shadow-lg">
+  <div className="bg-white p-4 md:p-8 rounded-2xl shadow-lg">
 
   
     <p className="text-sm text-gray-800 font-bold mb-4">
@@ -35,7 +36,7 @@ const Stats = () => {
     </p>
 
    
-    <div className="flex justify-center">
+    <div className="w-full flex justify-center overflow-x-auto">
 
      
       <PieChart width={400} height={400}>

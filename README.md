@@ -12,10 +12,7 @@
 
  **Features of this project:**
 
-       Interaction Tracking:
-                  Users can save and manage their call, text, and video interactions with friends.
-    Activity Timeline:
-                 All interactions are displayed in a timeline to easily review past activities.
-    Visual Analytics:
-                A pie chart helps users understand their interaction patterns at a glance.
+Interaction Tracking:  Users can save and manage their call, text, and video interactions with friends.
+Activity Timeline: All interactions are displayed in a timeline to easily review past activities.
+Visual Analytics: A pie chart helps users understand their interaction patterns at a glance.
 

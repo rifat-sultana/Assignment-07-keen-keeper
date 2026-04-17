@@ -15,6 +15,7 @@ import ErrorPage from "../Pages/ErrorPage";
   {
     path: "/",
     element: <MainLayout />,
+    errorElement: <ErrorPage />,
     children: [
       { path: "/", element: <Home/> },
       { path: "statsData", element: <StatsData />},

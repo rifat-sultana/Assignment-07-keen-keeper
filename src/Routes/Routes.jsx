@@ -9,8 +9,6 @@ import Stats from "../components/Stats/Stats";
 import ErrorPage from "../Pages/ErrorPage";
 
 
-
-
  const router = createBrowserRouter([
   {
     path: "/",

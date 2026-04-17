@@ -54,7 +54,7 @@ const FriendDetailsPage = () => {
 
 
     return (
-      <div className="max-w-6xl mx-auto mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-d gap-6">
+      <div className="max-w-6xl mx-auto mt-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
         {/* 🔵 LEFT SIDE */}
         <div className="bg-white p-6 rounded-xl shadow-lg text-center">
@@ -153,7 +153,7 @@ const FriendDetailsPage = () => {
           </div>
 
           <div className="bg-white p-3 md:p-6 rounded-xl shadow">
-            <div className="flex justify-between shadow-2xl">
+           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
               <h3 className="font-bold text-2xl">Relationship Goal</h3>
               <button className="text-md border shadow-lg bg-gray-100 px-2 py-1  rounded">
                 Edit
@@ -168,7 +168,7 @@ const FriendDetailsPage = () => {
           <div className="bg-white p-4 md:p-8 rounded-xl shadow">
             <h3 className="font-bold text-2xl mb-3">Quick Check-In</h3>
 
-            <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
 
               <button
                 onClick={() => handleAction("Call")}

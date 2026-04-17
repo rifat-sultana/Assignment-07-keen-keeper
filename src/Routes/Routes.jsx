@@ -4,7 +4,7 @@ import Friends from "../Pages/friends";
 import Timeline from "../Pages/Timeline";
 import StatsData from "../components/StatsData/StatsData";
 import Home from "../Pages/Home";
-import FriendsDetails from "../Pages/FriendDetails";
+import FriendDetails from "../Pages/FriendDetails";
 import Stats from "../components/Stats/Stats";
 import ErrorPage from "../Pages/ErrorPage";
 
@@ -20,7 +20,7 @@ import ErrorPage from "../Pages/ErrorPage";
       { path: "friends", element: <Friends /> },
       { path: "timeline", element: <Timeline /> },
       { path: "stats", element: <Stats /> },
-      { path:"/friend/:id", element: <FriendsDetails />},
+      { path:"/friend/:id", element: <FriendDetails />},
       { path: "*" , element: <ErrorPage />  },     
     ],
   },

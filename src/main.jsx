@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client';
-
+import 'react-toastify/dist/ReactToastify.css';
 import './index.css';
 import router from "./Routes/Routes.jsx";
 import { RouterProvider } from "react-router-dom";

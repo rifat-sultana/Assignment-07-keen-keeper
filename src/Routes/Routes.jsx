@@ -23,11 +23,7 @@ import ErrorPage from "../Pages/ErrorPage";
       { path: "timeline", element: <Timeline /> },
       { path: "stats", element: <Stats /> },
       { path:"/friend/:id", element: <FriendsDetails />},
-      { path: "*" , element: <ErrorPage />  },
-
-
-    
-     
+      { path: "*" , element: <ErrorPage />  },     
     ],
   },
 ]);
